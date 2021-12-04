@@ -3,29 +3,96 @@
   <head>
     <title>Food I love</title>
     <style>
+      .body{
+        background-color: lightblue
+      }
       .sushi-roll{
         width:500px;
         height:500px;
-        
-      }
-      .seaweed{
-      	background: blue;
-        width: 400px;
-        height: 350px;
-        margin-top: 40%;
+        position: relative;
         margin-left: auto;
-       	margin-right: auto;
-        border-radius: 46% 47% 63% 41% / 43% 55% 45% 57%  
+        margin-right: auto;
+        margin-top: 40%; /*maybe need to change*/
+      }
+      
+      .seaweed{
+      	background: grey;
+        width: 100%;
+        height: 80%;
+        position: absolute;
+        border-radius: 46% 47% 63% 41% / 43% 55% 45% 57%; 
+        border: 8px black solid;
       }
       
       .rice{
-        background: blue;
+        background: white;
+        position: absolute;
+        z-index:1;
         width: 400px;
-        height: 350px;
-        margin-top: 40%;
-        margin-left: auto;
-       	margin-right: auto;
-        border-radius: 46% 47% 63% 41% / 43% 55% 45% 57%  
+        height: 360px;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+      
+      .topping{
+        border: 8px black solid;
+        
+      }
+      .cucumber-stick{
+        background: green;
+        position: absolute;
+        z-index:2;
+        width: 100px;
+        height: 100px;
+        margin-top: 200px;
+        margin-left: 210px;
+        border-radius: 44% 44% 50% 56% / 37% 47% 62% 38%  
+      }
+      
+      .crab{
+        background: red;
+        position: absolute;
+        z-index:3;
+        width: 100px;
+        height: 100px;
+        margin-top: 200px;
+        margin-left: 110px;
+        border-radius: 44% 44% 50% 56% / 37% 47% 62% 38%  
+      }
+      
+      .tamago{
+        background: yellow;
+        position: absolute;
+        z-index:3;
+        width: 110px;
+        height: 90px;
+        margin-top: 120px;
+        margin-left: 150px;
+        border-radius: 44% 44% 50% 43% / 37% 47% 62% 38% 
+      }
+      
+      .ikura{
+        background: red;
+        position: absolute;
+        z-index:4;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%
+      }
+      
+      .ikura1{
+        margin-top: -20px;
+        margin-left: 165px;
+      }
+      
+      .ikura2{
+        margin-top: -20px;
+        margin-left:215px;
+      }
+    
+      .ikura3{
+        margin-top: -65px;
+        margin-left:190px;
       }
     
     
@@ -37,8 +104,21 @@
     <div class="sushi-roll">
         <div class="seaweed">
         </div>
-     	 	<div class="rice">
-      	</div>  
+     	 	<div class="seaweed rice">
+      	</div>
+      	<div class="topping cucumber-stick"> 
+      	</div>
+        <div class="topping crab"> 
+      	</div>
+        <div class="topping tamago"> 
+      	</div>
+				<div class="topping ikura ikura1"> 
+      	</div>
+      	<div class="topping ikura ikura2"> 
+      	</div>
+        <div class="topping ikura ikura3"> 
+      	</div>
+      
     </div>
 
     
